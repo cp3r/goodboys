@@ -4,15 +4,19 @@
       <el-header class="header" height="100px">
         <div class="left">
           <router-link to="/">
-            <img class="logo" src="./assets/logo.png" alt="logo" />
+            <img class="logo" src="./assets/logo.png" alt="logo">
           </router-link>
         </div>
-        <div class="right"><Login /></div>
+        <div class="right">
+          <Login/>
+        </div>
       </el-header>
       <el-main class="main">
         <div class="content">
           <router-view name="menu"></router-view>
-          <div class="main"><router-view /></div>
+          <div class="main">
+            <router-view/>
+          </div>
         </div>
       </el-main>
     </el-container>
@@ -74,6 +78,10 @@ body {
 .main {
   padding: 0;
   flex-grow: 1;
+
+  @media screen and (min-width: 992px) {
+    border-left: 2px solid #333;
+  }
 }
 
 .content {
