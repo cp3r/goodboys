@@ -1,4 +1,4 @@
-# Goodboys
+# Goodboys 🐶
 
 Study project
 
